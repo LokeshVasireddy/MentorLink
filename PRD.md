@@ -2,13 +2,13 @@
 
 ### TL;DR
 
-The MentorLink is a web-based networking and mentorship ecosystem designed for students across multiple colleges. It enables juniors to connect with seniors for guidance, mentorship, and collaboration through structured workflows, smart matching, and features—addressing the limitations of generic chat apps like WhatsApp. The platform targets students seeking meaningful academic and career support in a safe, organized environment.
+The MentorLink is a web-based networking and mentorship ecosystem designed for students who are in desprete need of upskilling through mentorship. It enables mentees to connect with mentors for guidance, mentorship, and collaboration through structured workflows, smart matching, and features—addressing the limitations of generic chat apps like WhatsApp, Topemate, etc.
 
 ---
 
 ## Problem Statement
 
-Students across colleges lack structured mentorship and networking opportunities. Existing apps like WhatsApp are generic, with no role-based matching, privacy safeguards, dedicated chats, or mentorship workflows. MentorLink solves this by enabling secure mentor–mentee connections, real-time chatting, and personalized roadmaps — crafted by mentors or AI — to guide students toward their academic and career goals.
+Students across colleges lack structured mentorship and networking opportunities. Existing apps are generic, with no role-based matching, privacy safeguards, dedicated chats, or mentorship workflows. MentorLink solves this by enabling secure mentor–mentee connections, real-time chatting, and personalized roadmaps — crafted by mentors/AI — to guide students toward their academic and career goals also having a dedicated Materials Library.
 
 ---
 
@@ -19,66 +19,67 @@ Students across colleges lack structured mentorship and networking opportunities
 * Achieve 1,000+ registered users from at least 4 colleges within the first year.
 * Maintain a monthly active user (MAU) rate of at least 50% of total signups.
 * Build a scalable platform capable of supporting 5,000+ concurrent users.
-* Lay the foundation for monetization via premium features or institutional subscriptions in future phases.
 
 ### User Goals
 
-* Enable juniors to easily discover and connect with relevant seniors for mentorship and guidance.
-* Provide seniors with a platform to share knowledge, build their network, and enhance their leadership profile.
+* Enable mentees to easily discover and connect with relevant mentors for mentorship and guidance.
+* Provide Mentors with a platform to share knowledge, build their network, and enhance their leadership profile.
 * Deliver a seamless, intuitive user experience accessible on desktop devices.
-
-### Non-Goals
-
-* The platform will not support general-purpose, unmoderated group chats unrelated to academic or mentorship objectives.
 
 ---
 
 ## Functional Requirements
 
-### Authentication & Profiles (Priority: Must-have)
+### Authentication & Profiles (Priority: 1)
 
 * **User Registration & Login:** Email/OTP or Google sign-in for secure access.
 * **Profile Management:** Fields for name, college, course, year, role, avatar, interests.
 * **Role Selection:** Users select mentor or mentee during onboarding.
 
-### User Discovery & Matching (Priority: Must-have)
+### User Discovery & Matching (Priority: 1)
 
-* **Search & Filter:** Find users by college, course, year, or role.
+* **Search & Filter:** Find users by college, course, year, experience or role.
 * **Smart Recommendations:** Algorithm suggests relevant mentors to mentees based on profile data.
 
-### Real-time Chat (Priority: Must-have)
-* **1-on-1 Messaging:** Secure, private chat.
-* **Interest/Topic Chat Rooms:** Join or create rooms based on shared interests.
-
-### Mentorship Request System (Priority: Must-have)
+### Mentorship Request System (Priority: 1)
 * **Mentorship Requests:** Mentees can send requests; mentors can accept/decline.
 * **Mentorship Status Tracking:** View active, pending, or completed mentorships.
 
-### Moderation Tools (Priority: Must-have)
+### Real-time Chat (Priority: 1)
+* **1-on-1 Messaging:** Secure, private chat.
+* **Interest/Topic Chat Rooms:** Join or create rooms based on shared interests.
+
+### Real-time Video Calls (Priority: 1)
+
+* **1-on-1 Video Mentorship:** Secure video calls between mentor and mentee.    
+* **Screen Sharing:** Share presentations, code, or documents in real-time.  
+
+### Rating & Reviews (Priority: 1)
+* **Mentor Ratings:** Mentees can rate their mentorship sessions.
+* **Reviews:** Written feedback for transparency and quality improvement.
+
+### Moderation Tools (Priority: 1)
 * **Report/Block Users:** Users can report or block inappropriate behavior.
 * **Admin Moderation Panel:** Admins can review reports and manage users.
 
-### Rating & Reviews (Priority: Must-have / Adds Credibility)
-* **Mentor Ratings:** Mentees can rate their mentorship sessions.
-* **Reviews & Feedback:** Written feedback for transparency and quality improvement.
+### Materials Library (Priority: 1)
+* **Resource Sharing:** Upload and categorize study materials or guides.
+* **Download tracking** To see most relavent resources in each category.
 
-### Personalized Roadmaps (Priority: Must-have / Phase 1.5)
-* **Mentor-Created Roadmaps:** Mentors can design structured learning/career paths for their mentees.
-* **AI-Suggested Roadmaps:** AI can generate personalized study/career plans based on user goals, background, and progress.
+### Personalized Roadmaps (Priority: 1)
+* **Mentor-Created Roadmaps:** Mentors can design structured learning paths for their mentees.
+* **AI-Suggested Roadmaps:** AI can generate personalized study plans based on user goals, background, and progress.
 * **Progress Tracking:** Students can mark tasks as complete and visualize their journey.
 * **Adaptive Recommendations:** Roadmaps update dynamically based on mentee’s performance and feedback.
 
-### Leaderboards & Recognition (Priority: Phase 2)
+### Leaderboards & Recognition (Priority: 2)
 * **Top Mentors by Category:** Highlight mentors with the best ratings in domains (e.g., placements, coding, design).
 * **Monthly Leaderboards:** Recognize active mentors with badges or rankings.
 
-### Knowledge Hub (Priority: Nice-to-have / Phase 2)
-* **Q&A Board:** College-specific, searchable posts and answers.
-* **Resource Sharing:** Upload and categorize study materials or guides.
+### Mentor Availability Calendar (Priority: 2)
 
-### Event Announcements (Priority: Nice-to-have / Phase 2/3)
-* **Event Posting:** Mentors can post events (fests, webinars).
-* **Notifications:** Students can receive reminders.
+* **Availability Setup:** Mentors define available time slots for mentorship sessions.   
+* **Automated Reminders:** Notifications for upcoming sessions.  
 
 ---
 
@@ -86,44 +87,52 @@ Students across colleges lack structured mentorship and networking opportunities
 
 **Core Experience**
 
-* **Step 1:** User logs in and lands on personalized dashboard.
-  * Clear navigation to search, chat, mentorship, and group features.
+**Step 1: Authentication & Onboarding**  
+- User registers via email/OTP or Google sign-in.  
+- Onboarding flow collects: name, college, course, year, avatar, role (mentor/mentee), interests.  
+- User lands on personalized dashboard with navigation to search, mentorship, chats, and resources.  
 
-* **Step 2:** User searches for peers using filters (college, course, year, role).
-  * Instant results with profile previews and smart recommendations.
-  * Option to view full profile or initiate chat/mentorship request.
+**Step 2: Discovery & Matching**  
+- Search using filters: college, course, year, role, expertise.  
+- Smart recommendations highlight relevant mentors or mentees.
 
-* **Step 3:** User sends mentorship request or starts a chat.
-  * Mentorship requests trigger notifications for seniors.
-  * Seniors can accept/decline; status updates shown to both parties.
-  
-* **Step 4:** User explores Personalized Roadmap.
-  * Mentors can assign structured learning paths.
-  * AI generates personalized study/career plans.
-  * Students can mark tasks complete and track progress visually.
+**Step 3: Mentorship Requests**  
+- Mentee sends request; mentor receives notification.  
+- Mentor accepts/declines; both see updated status (active, pending, completed).  
+- Mentor availability calendar allows booking sessions.  
+- Automated reminders notify users of scheduled mentorship calls.  
 
-* **Step 5:** User joins group chats or topic rooms.
-  * Easy discovery of active groups; join/leave with one click.
-  * Real-time messaging with moderation tools.
+**Step 4: Mentorship Interaction**  
+- 1-on-1 chat for ongoing discussions.  
+- Option for real-time video calls with screen sharing. 
+- Mentor ratings and written reviews follow completed mentorships.  
 
-* **Step 6:** User receives event announcements (Phase 2/3).
-  * Events displayed in dashboard; calendar integration.
+**Step 5: Personalized Roadmaps**  
+- Mentors assign structured learning paths.  
+- AI generates adaptive roadmaps based on profile and goals.  
+- Students mark tasks as complete; progress visualized on dashboard.  
+- Dynamic recommendations update as mentee progresses.  
 
-* **Step 7:** User accesses Knowledge Hub (Phase 2).
-  * Browse/search Q&A, post questions, or share resources.
+**Step 6: Knowledge & Materials Library**  
+- Upload and categorize study materials or guides.  
+- Search and filter by subject, tags, or popularity.   
+
+**Step 7: Recognition & Motivation**  
+- Leaderboards highlight top mentors by domain and monthly activity.  
+- Their Tier (New, Pro, GOAT) recognize consistent mentorship.  
 
 ---
 
 ## Success Metrics
 
 ### User-Centric Metrics
-* % of users who complete their profile within 7 days
 * % of mentees who successfully connect with at least one mentors
 * User retention rate after 30 and 90 days
 
 ### Technical Metrics
 * Platform uptime (target: 99.9%)
 * Average chat message delivery latency (<2s)
+* Seamless Video Calls
 * Error rate (login failures, message delivery issues)
 * Scalability (concurrent user support)
 
@@ -132,15 +141,13 @@ Students across colleges lack structured mentorship and networking opportunities
 ## Technical Considerations
 
 ### Technical Needs
-* **Frontend:** Responsive web app with modern UI, accessible on mobile and desktop.
-* **Backend:** Secure authentication, real-time messaging, user and group management, mentorship workflow logic.
+* **Frontend:** Responsive web app with modern UI.
+* **Backend:** Secure authentication, real-time messaging, video calling, mentorship workflow logic.
 * **APIs:** RESTful or Genrative Ai APIs for user, chat, mentorship, and event data.
-* **Data Models:** Users, Profiles, Colleges, Chats, Mentorships, Events, Reports.
 
 ### Integration Points
 * Google OAuth for authentication.
 * Email/OTP service for sign-up/login.
-* College SSO integration (future).
 * Notification service (email, in-app).
 
 ### Potential Challenges
