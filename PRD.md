@@ -1,3 +1,4 @@
+<!-- Avg. Score = 31.5% -> need to go to 71+% -->
 # MentorLink: Product Requirements Document (PRD)
 
 ### TL;DR
