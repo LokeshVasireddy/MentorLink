@@ -1,4 +1,4 @@
-<!-- Avg. Score = 76% from ChatGPT, Gemini and Grok-->
+<!-- Avg. Score = 73% from ChatGPT, Gemini and Grok for PRDv1.03-->
 
 In ## TL;DR ⚡
 <!-- Minimum Viable Product (MVP) has been deployed (React + Node.js + AWS), tested with 50+ users, achieving 4.5★ avg. ratings. -->
