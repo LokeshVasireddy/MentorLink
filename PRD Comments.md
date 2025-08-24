@@ -1,4 +1,4 @@
-<!-- Avg. Score = 73% from ChatGPT, Gemini and Grok for PRDv1.03-->
+<!-- Avg. Score = 73.5% from ChatGPT, Gemini and Grok for PRDv1.04-->
 
 In ## TL;DR ⚡
 <!-- Minimum Viable Product (MVP) has been deployed (React + Node.js + AWS), tested with 50+ users, achieving 4.5★ avg. ratings. -->
@@ -9,6 +9,9 @@ In ## Goals 🎯
 * **Year 1:** 50k students, 1k mentors, GMV ₹1 Cr, ₹20L revenue
 * **Year 2:** 100k students, 5k mentors, GMV ₹5 Cr
 * **Year 3:** 300k students, 15k mentors, GMV ₹20 Cr-->
+
+In Success Metrics
+<!-- * **Financial:** CAC (₹400–₹500) < LTV (₹1500–₹1600). -->
 
 In ## Technical Design 🛠️
 <!-- ### Architecture

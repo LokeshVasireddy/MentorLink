@@ -24,46 +24,6 @@ Current tools:
 * **LinkedIn** → Networking-focused, not mentorship
 * **Topmate** → Expensive, lacks roadmaps
 
-### MentorLink Differentiators
-* 🎯 **Smart matching** (cosine similarity on skills/goals)
-* 🔒 **E2E encrypted chat & calls + mentor verification**
-* 🤖 **AI-driven roadmaps** (adaptive JSON outputs)
-* 📚 **Curated + mentor-uploaded resources library**
-* 💸 **Affordable tiered pricing**
-
----
-
-## Goals 🎯
-
-### User Goals
-* **Mentees:** Access affordable mentors, gain structured guidance, boost employability (target +15–20% placement rates).
-* **Mentors:** Monetize expertise, grow visibility, build professional reputation.
-* **Platform:** Deliver scalable, secure mentorship-as-a-service.
-
----
-
-## Functional Requirements ⚙️
-
-### Must-Have
-1. **Matching Engine** → Cosine similarity (skills, goals, domain).
-2. **Mentor Tiers & Payments**
-   * 🆕 New: ₹50/session
-   * 🥈 Pro: ₹150/session
-   * 🏆 GOAT: ₹350/session
-   * 💳 Razorpay escrow + fraud detection
-3. **AI Roadmaps** → Mentor input + fine-tuned model (10k+ Indian profiles) → adaptive JSON schema (e.g., `{ "Month 1": {"Skill": "SQL", "Task": "Build DB", "Resource": "coursera.org/sql"} }`).
-4. **Secure Chat** → WebSocket, AES-256 encrypted, spam filters, rate-limiting.
-5. **Video mentoring** -> Real-time video calls, screen sharing, session recording.
-6. **Ratings & Reviews** → 5-star + text feedback.
-7. **Resource Library** → Curated + mentor-uploaded, searchable with tags.
-
-### Should-Have
-* Mentor verification (ID + LinkedIn KYC).
-* Progress tracking (visual completion bars).
-
-### Could-Have
-* Mentor availability calendars.
-
 ---
 
 ## User Experience 🧑‍💻
@@ -77,9 +37,7 @@ Current tools:
 
 ## Success Metrics 📊
 * **Engagement:** >40% repeat bookings (MVP 40%).
-* **Conversion:** >5% free→paid (MVP 5%).
 * **Quality:** Avg. rating ≥4.5/5, <5% disputes.
-* **Financial:** CAC (₹400–₹500) < LTV (₹1500–₹1600).
 * **Technical:** 99.9% uptime, <2s latency, <1% error rate.
 * **Impact:** +15–20% job placement outcomes in Tier-2/3 colleges.
 
@@ -94,6 +52,44 @@ Current tools:
 * **AI:** Llama 3.1 / OpenAI API (fine-tuned dataset, JSON schema)
 * **Hosting:** AWS ECS + S3 + CloudWatch
 * **Payments:** Razorpay escrow
+
+---
+
+# 🚀 MentorLink Milestones
+
+## 🟢 Milestone 1 — Foundation & MVP Launch
+- **Matching Engine** → Cosine similarity on skills, goals, and domain for smart mentor–mentee pairing.
+- **Mentor Tiers & Payments** → Tiered session pricing (₹50–₹350), Razorpay escrow, fraud detection, and 15–20% commission.
+- **Secure Chat (text)** → WebSocket + AES-256 encryption, spam filters, and rate-limiting for private conversations.
+
+**Goal:** Launch a working marketplace with **booking + payments + safe chat**.
+
+---
+
+## 📘 Milestone 2 — Learning Experience Layer
+- **AI Roadmaps** → Mentor-guided + fine-tuned model on 10k+ Indian profiles.
+- **Ratings & Reviews** → 5-star + text feedback to ensure quality and accountability.
+- **Resource Library** → Curated + mentor-uploaded content, searchable with tags.
+
+**Goal:** Boost retention by making mentorship **outcome-oriented** instead of just transactional.
+
+---
+
+## 🎥 Milestone 3 — Full Mentorship Experience
+- **Video Mentoring** → Real-time HD calls, screen sharing, and session recording for hands-on support.
+- **Mentor Verification (ID + LinkedIn KYC)** → Builds trust and reduces fraud.
+- **Progress Tracking** → Visual completion bars aligned with AI roadmaps for motivation.
+
+**Goal:** Deliver **deeper, credible mentorship** with measurable progress.
+
+---
+
+## 📈 Milestone 4 — Scale & Optimization
+- **Mentor Availability Calendars** → Smooth scheduling and reduced booking friction.
+- **Enhanced Security & Anti-Abuse** → Advanced spam filters and anomaly detection for payments/usage.
+- **Continuous Model Fine-Tuning** → Improve AI recommendations with data from roadmaps + sessions.
+
+**Goal:** Optimize operations, improve AI accuracy, and **scale to thousands of students**.
 
 ---
 
