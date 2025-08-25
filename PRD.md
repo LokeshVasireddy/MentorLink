@@ -1,12 +1,8 @@
 # MentorLink: Product Requirements Document 🚀
 
----
-
 ## TL;DR ⚡  
 MentorLink is a structured mentorship platform for Tier-2/3 Indian college students. Students book mentors through **tiered pricing (₹50–₹350/session)** with the platform taking a **15–20% commission**.
 The platform combines **mentor expertise with AI-generated roadmaps** offering a  **secure chat and video mentoring**.
-
----
 
 ## Problem Statement ❗
 
@@ -24,8 +20,6 @@ In India, according to the reports
 * **LinkedIn** → Networking-focused, not mentorship
 * **Topmate** → Expensive, lacks roadmaps
 
----
-
 ## User Experience 🧑‍💻
 * **Onboarding** → Google OAuth/Email → skills/goals → personalized dashboard.
 * **Discovery** → Filters (domain, language, tier) + AI recs (MVP achieved 90% user satisfaction).
@@ -33,15 +27,11 @@ In India, according to the reports
 * **Interaction** → Secure chat & video + roadmap updates + shared resources.
 * **Tracking** → Progress dashboard + repeat booking nudges.
 
----
-
 ## Success Metrics 📊
 * **Engagement:** >40% repeat bookings (MVP 40%).
 * **Quality:** Avg. rating ≥4.5/5, <5% disputes.
 * **Technical:** 99.9% uptime, <2s latency, <1% error rate.
 * **Impact:** +15–20% job placement outcomes in Tier-2/3 colleges.
-
----
 
 ## Technical Design 🛠️
 - **Frontend (React + Tailwind):** Lightweight, fast development, strong community, responsive UI.  
@@ -51,9 +41,7 @@ In India, according to the reports
 - **Hosting (AWS ECS + S3 + CloudWatch):** Scalable, monitored, with autoscaling for peak usage.  
 - **Payments (Razorpay Escrow):** Local integration, trusted in India, secure handling of tiered pricing.  
 
----
-
-# 🚀 MentorLink Milestones
+# 🚀 Milestones
 
 ## 🟢 Milestone 1 — Foundation & MVP Launch
 - **Matching Engine** → Cosine similarity on skills, goals, and domain for smart mentor–mentee pairing.
@@ -62,16 +50,12 @@ In India, according to the reports
 
 **Goal:** Launch a working marketplace with **booking + payments + safe chat**.
 
----
-
 ## 📘 Milestone 2 — Learning Experience Layer
 - **AI Roadmaps** → Mentor-guided + fine-tuned model on 10k+ Indian profiles.
 - **Ratings & Reviews** → 5-star + text feedback to ensure quality and accountability.
 - **Resource Library** → Curated + mentor-uploaded content, searchable with tags.
 
 **Goal:** Boost retention by making mentorship **outcome-oriented** instead of just transactional.
-
----
 
 ## 🎥 Milestone 3 — Full Mentorship Experience
 - **Video Mentoring** → Real-time HD calls, screen sharing, and session recording for hands-on support.
@@ -80,16 +64,12 @@ In India, according to the reports
 
 **Goal:** Deliver **deeper, credible mentorship** with measurable progress.
 
----
-
 ## 📈 Milestone 4 — Scale & Optimization
 - **Mentor Availability Calendars** → Smooth scheduling and reduced booking friction.
 - **Enhanced Security & Anti-Abuse** → Advanced spam filters and anomaly detection for payments/usage.
 - **Continuous Model Fine-Tuning** → Improve AI recommendations with data from roadmaps + sessions.
 
 **Goal:** Optimize operations, improve AI accuracy, and **scale to thousands of students**.
-
----
 
 ## Risk & Solution ❗
 - **Low Mentor Supply:** Risk of few mentors signing up.  
@@ -104,8 +84,6 @@ In India, according to the reports
 - **Abuse / Inappropriate Behavior in Chat:**  
   **Solution:** Report/block feature, automated toxicity filters, and admin moderation tools.  
 
----
-
 ## Scalability, Distributed Systems & Edge Cases 📈
 - **Scalability:** Horizontal scaling with load balancers (AWS ALB), stateless APIs, sharded MongoDB for heavy user growth.  
 - **Distributed Systems:** Event queues for handling mentorship requests, chat delivery, and payment events without bottlenecks.  
@@ -115,8 +93,6 @@ In India, according to the reports
   - Chat spam/flooding → rate-limiters + auto-block.  
   - Session no-show → partial refund, automatic penalty to mentor/mentee.  
   - Network drops in video calls → automatic reconnect + session extension.  
-
----
 
 ## Competitor Matrix ⚔️
 
@@ -130,10 +106,6 @@ In India, according to the reports
 | Video Mentoring     | ✅ (basic) | ❌        | ✅ (integrated) | ✅ (HD + screen sharing) |
 | Networking          | ✅ (groups) | ✅ (core) | ❌              | ✅ (curated circles)     |
 
----
-
 ## Societal Impact 🌍
 * MentorLink aims to **improve employability by 20%** for 50k+ underserved students within 5 years.
 * Multilingual support (Hindi, Tamil in roadmap) expands access.
-
----
