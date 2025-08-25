@@ -1,8 +1,0 @@
--> Less in FAANG Readiness
-   -> Why this Tech Stack
-   -> Non Functional Requirements
-   -> Risk & Mitigation
-
--> Technical Depth i.e. Tech Stack, Architecture, etc.
-
--> Depth in Scalability, Distributed Systems and Edge Cases

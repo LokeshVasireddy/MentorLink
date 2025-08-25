@@ -19,7 +19,7 @@ In India, according to the reports
   - Fewer than 10% of Tier-2 and Tier-3 schools have trained career counselors.
 - **Additional Sources**: Reports from [India Today](https://www.indiatoday.in) and [Higher Education Digest](https://www.highereducationdigest.com) confirm that over 90% of Indian schools lack professional career guidance, with only ~5,000 certified counselors available for millions of students.
 
-Current tools:
+## Current tools:
 * **WhatsApp** → Only chat, no structure/privacy
 * **LinkedIn** → Networking-focused, not mentorship
 * **Topmate** → Expensive, lacks roadmaps
@@ -44,14 +44,12 @@ Current tools:
 ---
 
 ## Technical Design 🛠️
-
-### Stack
-* **Frontend:** React + Tailwind
-* **Backend:** Node.js (Express)
-* **Database:** MongoDB (profiles, sessions, chat, library)
-* **AI:** Llama 3.1 / OpenAI API (fine-tuned dataset, JSON schema)
-* **Hosting:** AWS ECS + S3 + CloudWatch
-* **Payments:** Razorpay escrow
+- **Frontend (React + Tailwind):** Lightweight, fast development, strong community, responsive UI.  
+- **Backend (Node.js + Express):** Handles real-time chat, scalable APIs, async I/O for mentorship booking.  
+- **Database (MongoDB):** Flexible schema for dynamic mentor/mentee profiles, session logs, and AI roadmap updates.  
+- **AI Layer (Llama 3.1 / OpenAI):** Personalized career roadmaps, NLP-driven recommendations.  
+- **Hosting (AWS ECS + S3 + CloudWatch):** Scalable, monitored, with autoscaling for peak usage.  
+- **Payments (Razorpay Escrow):** Local integration, trusted in India, secure handling of tiered pricing.  
 
 ---
 
@@ -93,6 +91,33 @@ Current tools:
 
 ---
 
+## Risk & Solution ❗
+- **Low Mentor Supply:** Risk of few mentors signing up.  
+  **Solution:** Introduce tiered incentives, verification badges, and leaderboard recognition.  
+
+- **Payment Failures/Disputes:** Escrow disputes or failed Razorpay transactions.  
+  **Solution:** Build an admin dispute resolution system, retries, and backup PG integration.  
+
+- **AI Inaccuracy in Roadmaps:** Risk of generic or irrelevant roadmaps.  
+  **Solution:** Combine mentor-curated templates + AI fine-tuning with user feedback.  
+
+- **Abuse / Inappropriate Behavior in Chat:**  
+  **Solution:** Report/block feature, automated toxicity filters, and admin moderation tools.  
+
+---
+
+## Scalability, Distributed Systems & Edge Cases 📈
+- **Scalability:** Horizontal scaling with load balancers (AWS ALB), stateless APIs, sharded MongoDB for heavy user growth.  
+- **Distributed Systems:** Event queues for handling mentorship requests, chat delivery, and payment events without bottlenecks.  
+- **Edge Cases:**  
+  - Payment succeeds but mentor declines → auto-refund system.  
+  - AI roadmap fails → fallback to mentor-curated roadmap.  
+  - Chat spam/flooding → rate-limiters + auto-block.  
+  - Session no-show → partial refund, automatic penalty to mentor/mentee.  
+  - Network drops in video calls → automatic reconnect + session extension.  
+
+---
+
 ## Competitor Matrix ⚔️
 
 | Feature             | WhatsApp | LinkedIn | Topmate         | MentorLink               |
@@ -112,67 +137,3 @@ Current tools:
 * Multilingual support (Hindi, Tamil in roadmap) expands access.
 
 ---
-
-## Gaps / Limitations
-- **Less in FAANG Readiness:**  
-  MentorLink is not primarily focused on FAANG-level preparation; instead, it emphasizes accessibility and affordability for Tier-2/3 students.  
-  Advanced modules like mock FAANG interviews, deep system design training, or competitive coding prep may not be included in the MVP.  
-
----
-
-## Why this Tech Stack
-- **Frontend (React + Tailwind):** Lightweight, fast development, strong community, responsive UI.  
-- **Backend (Node.js + Express):** Handles real-time chat, scalable APIs, async I/O for mentorship booking.  
-- **Database (MongoDB):** Flexible schema for dynamic mentor/mentee profiles, session logs, and AI roadmap updates.  
-- **AI Layer (Llama 3.1 / OpenAI):** Personalized career roadmaps, NLP-driven recommendations.  
-- **Hosting (AWS ECS + S3 + CloudWatch):** Scalable, monitored, with autoscaling for peak usage.  
-- **Payments (Razorpay Escrow):** Local integration, trusted in India, secure handling of tiered pricing.  
-
----
-
-## Non-Functional Requirements
-- **Performance:** <2s latency for dashboard and profile searches.  
-- **Availability:** 99.9% uptime using multi-AZ AWS deployment.  
-- **Security:** AES-256 encryption for chat, TLS for all transactions.  
-- **Scalability:** Designed to scale from 1,000 → 100,000 users.  
-- **Compliance:** GDPR-like data protection and RBI guidelines for escrow payments.  
-- **Usability:** Simple UX for Tier-2/3 students (mobile-first).  
-
----
-
-## Risk & Mitigation
-- **Low Mentor Supply:** Risk of few mentors signing up.  
-  *Mitigation:* Introduce tiered incentives, verification badges, and leaderboard recognition.  
-
-- **Payment Failures/Disputes:** Escrow disputes or failed Razorpay transactions.  
-  *Mitigation:* Build an admin dispute resolution system, retries, and backup PG integration.  
-
-- **AI Inaccuracy in Roadmaps:** Risk of generic or irrelevant roadmaps.  
-  *Mitigation:* Combine mentor-curated templates + AI fine-tuning with user feedback.  
-
-- **Abuse / Inappropriate Behavior in Chat:**  
-  *Mitigation:* Report/block feature, automated toxicity filters, and admin moderation tools.  
-
----
-
-## Technical Depth
-- **Tech Stack:**  
-  React + Tailwind (frontend), Node.js + Express (backend), MongoDB (DB), AWS (hosting), Razorpay (payments), Llama 3.1/OpenAI (AI).  
-
-- **Architecture:**  
-  - Microservices for auth, booking, chat, payments, AI roadmap service.  
-  - Event-driven architecture with message queues (e.g., AWS SQS/Kafka for scaling).  
-  - WebSocket service for real-time chat.  
-  - CDN for resource delivery (S3 + CloudFront).  
-
----
-
-## Scalability, Distributed Systems & Edge Cases
-- **Scalability:** Horizontal scaling with load balancers (AWS ALB), stateless APIs, sharded MongoDB for heavy user growth.  
-- **Distributed Systems:** Event queues for handling mentorship requests, chat delivery, and payment events without bottlenecks.  
-- **Edge Cases:**  
-  - Payment succeeds but mentor declines → auto-refund system.  
-  - AI roadmap fails → fallback to mentor-curated roadmap.  
-  - Chat spam/flooding → rate-limiters + auto-block.  
-  - Session no-show → partial refund, automatic penalty to mentor/mentee.  
-  - Network drops in video calls → automatic reconnect + session extension.  
