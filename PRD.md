@@ -4,34 +4,12 @@
 MentorLink is a structured mentorship platform for Tier-2/3 Indian college students. Students book mentors through **tiered pricing (₹50–₹350/session)** with the platform taking a **15–20% commission**.
 The platform combines **mentor expertise with AI-generated roadmaps** offering a  **secure chat and video mentoring**.
 
-## Problem Statement ❗
-
-In India, according to the reports
-
-- **[IC³ Institute & CISCE Report](https://timesofindia.indiatimes.com/city/mumbai/late-night-screen-use-linked-sleep-loss-career-uncertainty-drive-mental-health-crisis-among-indian-students-says-report/articleshow/123459755.cms)**:
-  - ~50% of Indian students report never receiving formal career guidance.
-  - ~20% are unsure if they have received it.
-- **[CareerPlanB](https://careerplanb.co/importance-of-career-counselling-in-tier-2-and-tier-3-cities-in-india/)**:  
-  - Fewer than 10% of Tier-2 and Tier-3 schools have trained career counselors.
-- **Additional Sources**: Reports from [India Today](https://www.indiatoday.in) and [Higher Education Digest](https://www.highereducationdigest.com) confirm that over 90% of Indian schools lack professional career guidance, with only ~5,000 certified counselors available for millions of students.
-
-## Current tools:
-* **WhatsApp** → Only chat, no structure/privacy
-* **LinkedIn** → Networking-focused, not mentorship
-* **Topmate** → Expensive, lacks roadmaps
-
 ## User Experience 🧑‍💻
 * **Onboarding** → Google OAuth/Email → skills/goals → personalized dashboard.
 * **Discovery** → Filters (domain, language, tier) + AI recs (MVP achieved 90% user satisfaction).
 * **Booking Flow** → Request → mentor accepts → escrow payment → session unlocks roadmap.
 * **Interaction** → Secure chat & video + roadmap updates + shared resources.
 * **Tracking** → Progress dashboard + repeat booking nudges.
-
-## Success Metrics 📊
-* **Engagement:** >40% repeat bookings (MVP 40%).
-* **Quality:** Avg. rating ≥4.5/5, <5% disputes.
-* **Technical:** 99.9% uptime, <2s latency, <1% error rate.
-* **Impact:** +15–20% job placement outcomes in Tier-2/3 colleges.
 
 ## Technical Design 🛠️
 - **Frontend (React + Tailwind):** Lightweight, fast development, strong community, responsive UI.  
@@ -93,19 +71,3 @@ In India, according to the reports
   - Chat spam/flooding → rate-limiters + auto-block.  
   - Session no-show → partial refund, automatic penalty to mentor/mentee.  
   - Network drops in video calls → automatic reconnect + session extension.  
-
-## Competitor Matrix ⚔️
-
-| Feature             | WhatsApp | LinkedIn | Topmate         | MentorLink               |
-| ------------------- | -------- | -------- | --------------- | ------------------------ |
-| AI Roadmaps         | ❌        | ❌        | ❌              | ✅ (custom)              |
-| Payments            | ❌        | ❌        | ✅ (30%)        | ✅ (15–20%)              |
-| Smart Matching      | ❌        | ❌        | ✅              | ✅                       |
-| Privacy             | ❌        | ❌        | ❌              | ✅ (E2E)                 |
-| Tiered Pricing      | ❌        | ❌        | ❌              | ✅                       |
-| Video Mentoring     | ✅ (basic) | ❌        | ✅ (integrated) | ✅ (HD + screen sharing) |
-| Networking          | ✅ (groups) | ✅ (core) | ❌              | ✅ (curated circles)     |
-
-## Societal Impact 🌍
-* MentorLink aims to **improve employability by 20%** for 50k+ underserved students within 5 years.
-* Multilingual support (Hindi, Tamil in roadmap) expands access.
