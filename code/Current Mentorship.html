@@ -1,179 +1,310 @@
-<html><head>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<meta charset="utf-8"/>
-<title>Stitch Design</title>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<style type="text/tailwindcss">
-      :root {
-        --primary-color: #13c8ec;
-      }
-    </style>
-</head>
-<body class="bg-gray-50">
-<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
-<div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 bg-white px-10 py-4">
-<div class="flex items-center gap-10">
-<div class="flex items-center gap-3 text-2xl font-bold text-gray-900">
-<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_6_543)">
-<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
-<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
-</g>
-<defs>
-<clipPath id="clip0_6_543"><rect fill="white" height="48" width="48"></rect></clipPath>
-</defs>
-</svg>
-<span>MentorLink</span>
-</div>
-</div>
-<div class="flex flex-1 justify-end items-center gap-4">
-<label class="relative w-64">
-<div class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
-<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-</svg>
-</div>
-<input class="form-input w-full rounded-lg border-gray-200 bg-gray-100 pl-10 pr-4 py-2.5 text-sm placeholder:text-gray-500 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="Search" value=""/>
-</label>
-<button class="flex items-center justify-center rounded-full h-10 w-10 bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-800">
-<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
-</svg>
-</button>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmA6okonat11lFSgInScssnZzue9LeBlh2eJ0gO-CmtM9GUQKyz9Eh5AXdSn5QX5DqSJjRR4heZzoH_AP92ZzGjl3WRCf_j2ctZ1tFd66urXINQauoN1gXgxtelGn4-MccaGIQJpHBYVjmifiDS_EdALL-eYi_oe4V3Acf7-Ie8f22fEB7TmWDwj1ec58XCokemiWxUkJ572G21zwtfH4x9mWK7LCBivQqAJ9ULGMXbcqvykzYpSJtSw9wt2EglrAA9G4zpDNaJSc");'></div>
-</div>
-</header>
-<div class="flex flex-1">
-<aside class="w-64 bg-white p-6 border-r border-gray-200">
-<nav class="flex flex-col gap-4">
-<a class="font-bold text-lg text-gray-800" href="#">Dashboard</a>
-<div class="flex flex-col gap-2">
-<a class="flex items-center gap-3 px-4 py-2 rounded-lg bg-[var(--primary-color)] text-white font-medium" href="#">
-<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path>
-<circle cx="12" cy="10" r="3"></circle>
-</svg>
-<span>Current Mentorships</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 font-medium" href="#">
-<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-<polyline points="22,6 12,13 2,6"></polyline>
-</svg>
-<span>Mailbox</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 font-medium" href="#">
-<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 3a9 9 0 0 0 9 9h-9a9 9 0 0 0-9 9v-9a9 9 0 0 0 9-9Z"></path>
-<path d="M12 15a9 9 0 0 0-9 9h9a9 9 0 0 0 9-9v-9a9 9 0 0 0-9 9Z"></path>
-</svg>
-<span>AI Roadmaps</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 font-medium" href="#">
-<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<circle cx="11" cy="11" r="8"></circle>
-<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
-<line x1="11" x2="11" y1="8" y2="14"></line>
-<line x1="8" x2="14" y1="11" y2="11"></line>
-</svg>
-<span>Find Mentors</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 font-medium" href="#">
-<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-</svg>
-<span>Resources</span>
-</a>
-</div>
-<div class="border-t border-gray-200 pt-4 mt-auto">
-<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 font-medium" href="#">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path>
-</svg>
-<span>Settings</span>
-</a>
-</div>
-</nav>
-</aside>
-<main class="flex-1 p-8">
-<div class="flex items-center justify-between mb-8">
-<h1 class="text-3xl font-bold text-gray-900">Welcome back, Sarah</h1>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-<div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-<p class="text-gray-600 text-base font-medium">Mentors Connected</p>
-<p class="text-gray-900 text-4xl font-bold">12</p>
-</div>
-<div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-<p class="text-gray-600 text-base font-medium">Sessions Scheduled</p>
-<p class="text-gray-900 text-4xl font-bold">25</p>
-</div>
-<div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-<p class="text-gray-600 text-base font-medium">Mentorships Concluded</p>
-<p class="text-gray-900 text-4xl font-bold">3</p>
-</div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-<div class="lg:col-span-2">
-<h2 class="text-2xl font-bold text-gray-900 mb-4">Upcoming Sessions</h2>
-<div class="bg-white rounded-lg shadow-sm border border-gray-200 divide-y divide-gray-200">
-<div class="flex items-center gap-4 p-4">
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVECqGnVVZDhp9OuhWxsaRcHQdjSE609UTaUy7G4lZx-O_yzAerE4DUENyb9_tTfRZ5EmvsPm8I0BpQP0U0MjzVYJdKcWhg94sdHvinDo5EzJCCHeglIRmoeuOvIez7NIJbG_Dp0fefe0Y4-D1v558L9a_ZVlO9n8m30dFHXJ0IoWOR_dFjNhryXGVhkyBrSKEpvMoSvaRRNhhRHpHIebUEfTZDaVbWVEnjHjbm_muEhGbKzBfP5g1plmuBodeBNL2ajvM_-bR1Ao");'></div>
-<div class="flex-1">
-<p class="text-gray-800 font-semibold">Ethan Carter</p>
-<p class="text-gray-500 text-sm">July 15, 2024 · 2:00 PM</p>
-</div>
-<button class="px-4 py-2 bg-[var(--primary-color)] text-white text-sm font-semibold rounded-lg hover:bg-opacity-90">Join</button>
-</div>
-</div>
-<h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Mentor Recommendations</h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
-<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full mx-auto mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPvK_ugWcAJUc2eh0ZiZcKeY2z1WKIDaQkEgqYZoFY8wsgOrlYn1bxM7yRdpExfFRTjwdfvOgYKr9hg6uJkdE9haVQ_o6WjFP_u2uQ0ni4XbrCUxo_Utk9IUqd6bKCnAxdKJIBmZvSt9_q5XM81BKvdIQhSbQGeCT_ZFJnvbFfpbhkBXzUpZhW-zg2uhb8_mXYmtBI4wFsAJJM9A3RJCdkuCx4vF6IMGmq97FhGRQwBP3hK2AZc5j7z4waTFB5FhpAzvwpARLqZEA");'></div>
-<p class="text-gray-800 font-semibold">Liam Harper</p>
-<p class="text-gray-500 text-sm mb-4">Software Engineering</p>
-<button class="w-full px-4 py-2 border border-[var(--primary-color)] text-[var(--primary-color)] text-sm font-semibold rounded-lg hover:bg-[var(--primary-color)] hover:text-white">Connect</button>
-</div>
-<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
-<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full mx-auto mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBABKXiZAJIEcQe_1JtOBEXzZ0tCmyP66DYPxAxGsSiS6a-N_2C1pnwWcOM6bD4lHN3TshLefRH4TJ-do_e1MybhEPxXBBvlRlWJ5f8ulKisoMlqvvQvhwSIp1T07EIHUpgcYTvtGa2w75XberZ9kbfBO93QE66eZz9ZN1WrGg2O_lIzMah0BXsCTTXHBAAKden3og3Os9ybTxpJMagPxSkOQbf6b4_j-MrisIXnuRiIC9Ebag1SIyF2gO-OgG2rQMBdmQdXN1os5I");'></div>
-<p class="text-gray-800 font-semibold">Olivia Bennett</p>
-<p class="text-gray-500 text-sm mb-4">Product Management</p>
-<button class="w-full px-4 py-2 border border-[var(--primary-color)] text-[var(--primary-color)] text-sm font-semibold rounded-lg hover:bg-[var(--primary-color)] hover:text-white">Connect</button>
-</div>
-<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
-<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full mx-auto mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpTbp_7Adi2-7SYM03SsX31Osylnxocb2O8Y7ykI81-weKzSfY9OHHR67oPI6QH34w9n-NRz56izy5nhABIa5yM-rjrViSKRSpnkEEPPOJJdM4jHFm8QkD59v1O5T3Y2VrJ_YrGZOz6jLa0dNByGbuwLQuuCPMABDBcwv2wb7lMu8HqUCTRStCfABea5lg4dCHcv44dqYp0qXj4c6_VobqetQxNBfNzaRzitLIR12JDetn3Dm6vyI4jm_xBm0rTFjvToYh_1b76FM");'></div>
-<p class="text-gray-800 font-semibold">Noah Foster</p>
-<p class="text-gray-500 text-sm mb-4">Data Science</p>
-<button class="w-full px-4 py-2 border border-[var(--primary-color)] text-[var(--primary-color)] text-sm font-semibold rounded-lg hover:bg-[var(--primary-color)] hover:text-white">Connect</button>
-</div>
-</div>
-</div>
-<div class="lg:col-span-1">
-<h2 class="text-2xl font-bold text-gray-900 mb-4">Recent Activity</h2>
-<div class="bg-white rounded-lg shadow-sm border border-gray-200 divide-y divide-gray-200">
-<div class="flex items-center gap-4 p-4">
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDM7nDP0slDbGku2S-SRPvFWzzclAk4lNWEEpSvaT0DLvpBOGJa1WXlUQ4Rj4Gz6wZhteb0M5ION0I90jAZcEQK9nz-PLnjsSNpYwOXOMlZnaLcvhXwgP_0y1kq3aW60sh5z-VvcqTPY16btLnmKWLphG2o6Tr7nj3kr1gUze-XC-L8t73aLFLrW-tXrlOwx1Vhx2wy1cg7WO6IKEvBTHW3A0xq6VdJsF7SprXT6cbTJf-p1rRi9yCkwmrkpqm_y8eTcVN33vI8Zrs");'></div>
-<div>
-<p class="text-gray-800 font-medium">Session with Liam Harper completed</p>
-<p class="text-gray-500 text-sm">July 10, 2024</p>
-</div>
-</div>
-<div class="flex items-center gap-4 p-4">
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlpwB6eInvxaj8DXylYjLTEajnzqs42j3qooDaU2bkTnulLHIZECnzc1EpGOVMGUc6eQiH1w5uzRCQvbgY4cb561EeeIqD2EY3DJoqAdDr7oqeoZnuxMiUxatwmxTU5xZ7qEZ46jr6J1DSkPNNAf5FuB0TcIweW98hD5XWoieNhrs_Afm-nGiHyC7b88xl63iYjn79ML3u2z4FarfYm3na3siuhGXO-Rsh758Bl3TpirPw-yrGmYIXHQXbA8aTSDs_TQyKmP1T9ek");'></div>
-<div>
-<p class="text-gray-800 font-medium">New message from Olivia Bennett</p>
-<p class="text-gray-500 text-sm">July 8, 2024</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-</div>
-</div>
-</div>
-</body></html>
+<html>
+  <head>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <title>Stitch Design</title>
+    <link
+      href="data:image/x-icon;base64,"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="Current Mentorship.css" />
+  </head>
+  <body>
+    <div class="design-root" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container">
+        <header>
+          <div class="logo-container">
+            <div class="logo">
+              <svg
+                fill="none"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_6_543)">
+                  <path
+                    d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    clip-rule="evenodd"
+                    d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_543">
+                    <rect fill="white" height="48" width="48"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>MentorLink</span>
+            </div>
+          </div>
+          <div class="header-actions">
+            <label class="search-bar">
+              <div class="search-icon">
+                <svg
+                  fill="currentColor"
+                  height="20px"
+                  viewBox="0 0 256 256"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                  ></path>
+                </svg>
+              </div>
+              <input placeholder="Search" value="" />
+            </label>
+            <button class="notification-button">
+              <svg
+                fill="currentColor"
+                height="20px"
+                viewBox="0 0 256 256"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="profile-picture"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmA6okonat11lFSgInScssnZzue9LeBlh2eJ0gO-CmtM9GUQKyz9Eh5AXdSn5QX5DqSJjRR4heZzoH_AP92ZzGjl3WRCf_j2ctZ1tFd66urXINQauoN1gXgxtelGn4-MccaGIQJpHBYVjmifiDS_EdALL-eYi_oe4V3Acf7-Ie8f22fEB7TmWDwj1ec58XCokemiWxUkJ572G21zwtfH4x9mWK7LCBivQqAJ9ULGMXbcqvykzYpSJtSw9wt2EglrAA9G4zpDNaJSc");'
+            ></div>
+          </div>
+        </header>
+        <div class="main-content">
+          <aside>
+            <nav>
+              <a class="dashboard-link" href="#">Dashboard</a>
+              <div class="nav-links">
+                <a class="nav-link active" href="#">
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Current Mentorships</span>
+                </a>
+                <a class="nav-link" href="#">
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Mailbox</span>
+                </a>
+                <a class="nav-link" href="#">
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3a9 9 0 0 0 9 9h-9a9 9 0 0 0-9 9v-9a9 9 0 0 0 9-9Z"
+                    ></path>
+                    <path
+                      d="M12 15a9 9 0 0 0-9 9h9a9 9 0 0 0 9-9v-9a9 9 0 0 0-9 9Z"
+                    ></path>
+                  </svg>
+                  <span>AI Roadmaps</span>
+                </a>
+                <a class="nav-link" href="#">
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                    <line x1="11" x2="11" y1="8" y2="14"></line>
+                    <line x1="8" x2="14" y1="11" y2="11"></line>
+                  </svg>
+                  <span>Find Mentors</span>
+                </a>
+                <a class="nav-link" href="#">
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path
+                      d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"
+                    ></path>
+                  </svg>
+                  <span>Resources</span>
+                </a>
+              </div>
+              <div class="settings-link-container">
+                <a class="nav-link" href="#">
+                  <svg
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 256 256"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"
+                    ></path>
+                  </svg>
+                  <span>Settings</span>
+                </a>
+              </div>
+            </nav>
+          </aside>
+          <main>
+            <div class="welcome-header">
+              <h1>Welcome back, Sarah</h1>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <p class="stat-title">Mentors Connected</p>
+                <p class="stat-value">12</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-title">Sessions Scheduled</p>
+                <p class="stat-value">25</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-title">Mentorships Concluded</p>
+                <p class="stat-value">3</p>
+              </div>
+            </div>
+            <div class="main-grid">
+              <div class="sessions-container">
+                <h2>Upcoming Sessions</h2>
+                <div class="sessions-card">
+                  <div class="session-item">
+                    <div
+                      class="mentor-avatar"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVECqGnVVZDhp9OuhWxsaRcHQdjSE609UTaUy7G4lZx-O_yzAerE4DUENyb9_tTfRZ5EmvsPm8I0BpQP0U0MjzVYJdKcWhg94sdHvinDo5EzJCCHeglIRmoeuOvIez7NIJbG_Dp0fefe0Y4-D1v558L9a_ZVlO9n8m30dFHXJ0IoWOR_dFjNhryXGVhkyBrSKEpvMoSvaRRNhhRHpHIebUEfTZDaVbWVEnjHjbm_muEhGbKzBfP5g1plmuBodeBNL2ajvM_-bR1Ao");'
+                    ></div>
+                    <div class="session-details">
+                      <p class="mentor-name">Ethan Carter</p>
+                      <p class="session-time">July 15, 2024 · 2:00 PM</p>
+                    </div>
+                    <button class="join-button">Join</button>
+                  </div>
+                </div>
+                <div class="recommendations-container">
+                  <h2>Mentor Recommendations</h2>
+                  <div class="recommendations-grid">
+                    <div class="recommendation-card">
+                      <div
+                        class="mentor-avatar"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPvK_ugWcAJUc2eh0ZiZcKeY2z1WKIDaQkEgqYZoFY8wsgOrlYn1bxM7yRdpExfFRTjwdfvOgYKr9hg6uJkdE9haVQ_o6WjFP_u2uQ0ni4XbrCUxo_Utk9IUqd6bKCnAxdKJIBmZvSt9_q5XM81BKvdIQhSbQGeCT_ZFJnvbFfpbhkBXzUpZhW-zg2uhb8_mXYmtBI4wFsAJJM9A3RJCdkuCx4vF6IMGmq97FhGRQwBP3hK2AZc5j7z4waTFB5FhpAzvwpARLqZEA");'
+                      ></div>
+                      <p class="mentor-name">Liam Harper</p>
+                      <p class="mentor-specialty">Software Engineering</p>
+                      <button class="connect-button">Connect</button>
+                    </div>
+                    <div class="recommendation-card">
+                      <div
+                        class="mentor-avatar"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBABKXiZAJIEcQe_1JtOBEXzZ0tCmyP66DYPxAxGsSiS6a-N_2C1pnwWcOM6bD4lHN3TshLefRH4TJ-do_e1MybhEPxXBBvlRlWJ5f8ulKisoMlqvvQvhwSIp1T07EIHUpgcYTvtGa2w75XberZ9kbfBO93QE66eZz9ZN1WrGg2O_lIzMah0BXsCTTXHBAAKden3og3Os9ybTxpJMagPxSkOQbf6b4_j-MrisIXnuRiIC9Ebag1SIyF2gO-OgG2rQMBdmQdXN1os5I");'
+                      ></div>
+                      <p class="mentor-name">Olivia Bennett</p>
+                      <p class="mentor-specialty">Product Management</p>
+                      <button class="connect-button">Connect</button>
+                    </div>
+                    <div class="recommendation-card">
+                      <div
+                        class="mentor-avatar"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpTbp_7Adi2-7SYM03SsX31Osylnxocb2O8Y7ykI81-weKzSfY9OHHR67oPI6QH34w9n-NRz56izy5nhABIa5yM-rjrViSKRSpnkEEPPOJJdM4jHFm8QkD59v1O5T3Y2VrJ_YrGZOz6jLa0dNByGbuwLQuuCPMABDBcwv2wb7lMu8HqUCTRStCfABea5lg4dCHcv44dqYp0qXj4c6_VobqetQxNBfNzaRzitLIR12JDetn3Dm6vyI4jm_xBm0rTFjvToYh_1b76FM");'
+                      ></div>
+                      <p class="mentor-name">Noah Foster</p>
+                      <p class="mentor-specialty">Data Science</p>
+                      <button class="connect-button">Connect</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="activity-container">
+                <h2>Recent Activity</h2>
+                <div class="activity-card">
+                  <div class="activity-item">
+                    <div
+                      class="activity-avatar"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDM7nDP0slDbGku2S-SRPvFWzzclAk4lNWEEpSvaT0DLvpBOGJa1WXlUQ4Rj4Gz6wZhteb0M5ION0I90jAZcEQK9nz-PLnjsSNpYwOXOMlZnaLcvhXwgP_0y1kq3aW60sh5z-VvcqTPY16btLnmKWLphG2o6Tr7nj3kr1gUze-XC-L8t73aLFLrW-tXrlOwx1Vhx2wy1cg7WO6IKEvBTHW3A0xq6VdJsF7SprXT6cbTJf-p1rRi9yCkwmrkpqm_y8eTcVN33vI8Zrs");'
+                    ></div>
+                    <div>
+                      <p class="activity-description">
+                        Session with Liam Harper completed
+                      </p>
+                      <p class="activity-time">July 10, 2024</p>
+                    </div>
+                  </div>
+                  <div class="activity-item">
+                    <div
+                      class="activity-avatar"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlpwB6eInvxaj8DXylYjLTEajnzqs42j3qooDaU2bkTnulLHIZECnzc1EpGOVMGUc6eQiH1w5uzRCQvbgY4cb561EeeIqD2EY3DJoqAdDr7oqeoZnuxMiUxatwmxTU5xZ7qEZ46jr6J1DSkPNNAf5FuB0TcIweW98hD5XWoieNhrs_Afm-nGiHyC7b88xl63iYjn79ML3u2z4FarfYm3na3siuhGXO-Rsh758Bl3TpirPw-yrGmYIXHQXbA8aTSDs_TQyKmP1T9ek");'
+                    ></div>
+                    <div>
+                      <p class="activity-description">
+                        New message from Olivia Bennett
+                      </p>
+                      <p class="activity-time">July 8, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
