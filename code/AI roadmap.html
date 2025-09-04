@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Roadmaps</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #8B5CF6;}
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7fafc;
+        }
+        .roadmap-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .roadmap-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .milestone {
+            position: relative;
+            padding-left: 50px;
+            padding-bottom: 30px;
+        }
+        .milestone:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 40px;
+            width: 2px;
+            height: calc(100% - 10px);
+            background-color: #C4B5FD;}
+        .milestone-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            border: 2px solid #C4B5FD;border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        .tooltip {
+            visibility: hidden;
+            width: 120px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .milestone-icon:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="flex bg-white">
+<aside class="w-64 bg-black min-h-screen flex flex-col justify-between">
+<div>
+<div class="p-6 flex items-center space-x-2">
+<svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 11C15.3137 11 18 8.31371 18 5C18 1.68629 15.3137 -1 12 -1C8.68629 -1 6 1.68629 6 5C6 8.31371 8.68629 11 12 11ZM12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M19 21V19C19 16.2386 16.7614 14 14 14H10C7.23858 14 5 16.2386 5 19V21" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<h1 class="text-2xl font-bold text-white">MentorLink</h1>
+</div>
+<nav class="mt-6">
+<a class="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800" href="#">
+<span class="material-icons">dashboard</span>
+<span class="ml-4">Dashboard</span>
+</a>
+<a class="flex items-center px-6 py-3 text-white bg-gray-800 border-l-4 border-purple-500" href="#">
+<span class="material-icons">map</span>
+<span class="ml-4">AI Roadmaps</span>
+</a>
+<a class="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800" href="#">
+<span class="material-icons">mail_outline</span>
+<span class="ml-4">Mailbox</span>
+</a>
+<a class="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800" href="#">
+<span class="material-icons">search</span>
+<span class="ml-4">Find Mentors</span>
+</a>
+<a class="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800" href="#">
+<span class="material-icons">source</span>
+<span class="ml-4">Resources</span>
+</a>
+</nav>
+</div>
+<div class="p-6">
+<a class="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800" href="#">
+<span class="material-icons">settings</span>
+<span class="ml-4">Settings</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 p-8 bg-gray-50">
+<header class="flex justify-between items-center mb-8">
+<h2 class="text-3xl font-bold text-gray-800">AI Roadmaps</h2>
+<div class="flex items-center space-x-4">
+<div class="relative">
+<input class="bg-gray-100 rounded-lg py-2 px-4 pl-10 w-64 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Search" type="text"/>
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+</div>
+<button class="relative">
+<span class="material-icons text-gray-600">notifications</span>
+</button>
+<img alt="User avatar" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhpVMSw20h-b0qxtBASUEMURTDwzGlST6iM5ux6mchxNHFI9C793vViVLFo7iJghWAA4_JWyN3dOTO0g7xNaH2T5upJkCJQTuySujQti1r6EAYoo7ECNWAbgDLjyVc1JdsXItBqu6ASLLccXvIdlMxK9n0OArK3qetgwFmSB32WY2gf6NeUxlZ9WAmkHM12n232kXkA2PITdYSzzXq35Npg5RyqVXWCsBdWYg5LncXK3JLpxeVkMFOEY2gOiZ8uwJTv-HJDWhSmO4m"/>
+</div>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="roadmap-cards">
+<div class="roadmap-card bg-white p-6 rounded-lg shadow-md cursor-pointer" onclick="openRoadmap('data-science')">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Data Science</h3>
+<p class="text-gray-600 mb-4">Master the skills needed to become a data scientist and work with complex data sets.</p>
+<div class="w-full bg-gray-200 rounded-full h-2.5">
+<div class="bg-purple-500 h-2.5 rounded-full" style="width: 45%"></div>
+</div>
+<p class="text-right text-sm text-gray-500 mt-1">45% Complete</p>
+</div>
+<div class="roadmap-card bg-white p-6 rounded-lg shadow-md cursor-pointer" onclick="openRoadmap('machine-learning')">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Machine Learning</h3>
+<p class="text-gray-600 mb-4">Learn to build and deploy machine learning models for real-world applications.</p>
+<div class="w-full bg-gray-200 rounded-full h-2.5">
+<div class="bg-purple-500 h-2.5 rounded-full" style="width: 70%"></div>
+</div>
+<p class="text-right text-sm text-gray-500 mt-1">70% Complete</p>
+</div>
+<div class="roadmap-card bg-white p-6 rounded-lg shadow-md cursor-pointer" onclick="openRoadmap('product-ai')">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Product AI</h3>
+<p class="text-gray-600 mb-4">Understand how to integrate AI into products to drive business value and innovation.</p>
+<div class="w-full bg-gray-200 rounded-full h-2.5">
+<div class="bg-purple-500 h-2.5 rounded-full" style="width: 20%"></div>
+</div>
+<p class="text-right text-sm text-gray-500 mt-1">20% Complete</p>
+</div>
+</div>
+<div class="mt-12 hidden" id="roadmap-flow-container">
+<button class="mb-4 flex items-center text-purple-600 hover:text-purple-800" onclick="closeRoadmap()">
+<span class="material-icons">arrow_back</span>
+<span class="ml-2">Back to Roadmaps</span>
+</button>
+<div class="bg-white p-8 rounded-lg shadow-md" id="roadmap-flow-content">
+</div>
+</div>
+</main>
+<script>
+        const roadmaps = {
+            'data-science': {
+                title: 'Data Science Roadmap',
+                milestones: [
+                    { icon: 'functions', name: 'Module 1: Foundations', tooltip: 'Math and Stats' },
+                    { icon: 'code', name: 'Module 2: Programming', tooltip: 'Python & SQL' },
+                    { icon: 'analytics', name: 'Module 3: Data Analysis', tooltip: 'Pandas, NumPy' },
+                    { icon: 'model_training', name: 'Module 4: Machine Learning Basics', tooltip: 'Scikit-learn' },
+                    { icon: 'visibility', name: 'Module 5: Data Visualization', tooltip: 'Matplotlib, Seaborn' },
+                    { icon: 'work', name: 'Project: Titanic Survival Prediction', tooltip: 'Practical Application' }
+                ]
+            },
+            'machine-learning': {
+                title: 'Machine Learning Roadmap',
+                milestones: [
+                    { icon: 'calculate', name: 'Module 1: Linear Algebra', tooltip: 'Core Concepts' },
+                    { icon: 'trending_up', name: 'Module 2: Regression Models', tooltip: 'Linear & Logistic' },
+                    { icon: 'hub', name: 'Module 3: Neural Networks', tooltip: 'Intro to Deep Learning' },
+                    { icon: 'layers', name: 'Module 4: Advanced Architectures', tooltip: 'CNNs, RNNs' },
+                    { icon: 'cloud_upload', name: 'Module 5: MLOps', tooltip: 'Deployment & Monitoring' },
+                    { icon: 'emoji_objects', name: 'Project: Image Classifier', tooltip: 'Hands-on project' }
+                ]
+            },
+            'product-ai': {
+                title: 'Product AI Roadmap',
+                milestones: [
+                    { icon: 'lightbulb', name: 'Module 1: AI Product Ideation', tooltip: 'Finding Opportunities' },
+                    { icon: 'group', name: 'Module 2: User-Centric AI', tooltip: 'Designing for Users' },
+                    { icon: 'bar_chart', name: 'Module 3: AI Product Metrics', tooltip: 'Measuring Success' },
+                    { icon: 'gavel', name: 'Module 4: AI Ethics & Governance', tooltip: 'Responsible AI' },
+                    { icon: 'rocket_launch', name: 'Module 5: Go-to-Market Strategy', tooltip: 'Launching AI Products' },
+                    { icon: 'assignment', name: 'Case Study: AI Feature Proposal', tooltip: 'Real-world scenario' }
+                ]
+            }
+        };
+        function openRoadmap(roadmapId) {
+            const roadmapData = roadmaps[roadmapId];
+            if (!roadmapData) return;
+            const roadmapFlowContent = document.getElementById('roadmap-flow-content');
+            let milestonesHtml = `<h3 class="text-2xl font-bold text-gray-800 mb-8">${roadmapData.title}</h3><div class="relative">`;
+            roadmapData.milestones.forEach(milestone => {
+                milestonesHtml += `
+                    <div class="milestone">
+                        <div class="milestone-icon group">
+                            <span class="material-icons text-purple-500">${milestone.icon}</span>
+                            <span class="tooltip">${milestone.tooltip}</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-700">${milestone.name}</h4>
+                    </div>
+                `;
+            });
+            milestonesHtml += `</div>`;
+            roadmapFlowContent.innerHTML = milestonesHtml;
+            document.getElementById('roadmap-cards').classList.add('hidden');
+            document.getElementById('roadmap-flow-container').classList.remove('hidden');
+        }
+        function closeRoadmap() {
+            document.getElementById('roadmap-cards').classList.remove('hidden');
+            document.getElementById('roadmap-flow-container').classList.add('hidden');
+        }
+    </script>
+</body></html>

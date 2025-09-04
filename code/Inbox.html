@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MentorLink - Mailbox</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --brand-primary: #4f46e5;
+            --brand-secondary: #0f172a;
+            --brand-background: #f8fafc;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--brand-background);
+        }
+        .sidebar {
+            background-color: var(--brand-secondary);
+            color: white;
+        }
+        .sidebar-icon {
+            font-size: 24px;
+        }
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s;
+        }
+        .sidebar-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .sidebar-link.active {
+            background-color: var(--brand-primary);
+            color: white;
+            font-weight: 600;
+        }
+        .message-list-item:hover {
+            background-color: #f1f5f9;
+        }
+        .message-list-item.active {
+            background-color: #eef2ff;
+            border-left: 4px solid var(--brand-primary);
+        }
+    </style>
+</head>
+<body>
+<div class="flex h-screen bg-gray-50">
+<aside class="w-64 sidebar flex flex-col">
+<div class="p-6 flex items-center space-x-3">
+<div class="bg-indigo-600 p-2 rounded-lg">
+<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h1 class="text-2xl font-bold text-white">MentorLink</h1>
+</div>
+<nav class="flex-1 px-4 py-4 space-y-2">
+<a class="sidebar-link" href="#">
+<span class="material-icons sidebar-icon mr-3">dashboard</span>
+                Dashboard
+            </a>
+<a class="sidebar-link" href="#">
+<span class="material-icons sidebar-icon mr-3">people</span>
+                Mentorships
+            </a>
+<a class="sidebar-link active" href="#">
+<span class="material-icons sidebar-icon mr-3">mail</span>
+                Mailbox
+            </a>
+<a class="sidebar-link" href="#">
+<span class="material-icons sidebar-icon mr-3">map</span>
+                AI Roadmaps
+            </a>
+<a class="sidebar-link" href="#">
+<span class="material-icons sidebar-icon mr-3">search</span>
+                Find Mentors
+            </a>
+<a class="sidebar-link" href="#">
+<span class="material-icons sidebar-icon mr-3">source</span>
+                Resources
+            </a>
+</nav>
+<div class="px-4 py-4">
+<a class="sidebar-link" href="#">
+<span class="material-icons sidebar-icon mr-3">settings</span>
+                Settings
+            </a>
+</div>
+</aside>
+<main class="flex-1 flex flex-col">
+<header class="flex items-center justify-between p-6 bg-white border-b border-[var(--border-color)]">
+<div class="flex-1">
+<div class="relative max-w-md">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3">
+<span class="material-icons text-gray-400">search</span>
+</span>
+<input class="w-full pl-10 pr-4 py-2 text-sm text-[var(--text-primary)] bg-gray-100 rounded-full focus:outline-none focus:bg-white focus:ring-2 focus:ring-indigo-300" placeholder="Search" type="text"/>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-gray-500 hover:text-[var(--text-primary)]">
+<span class="material-icons">notifications</span>
+</button>
+<img alt="User avatar" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbkZZ2yNLWVoCN5ZHUPx2isXbANQINrrU3VTKKGLmpH8XfAEeIpy6EVBM4NMg61CkLPTSV2r35vWeox0du_2eSaSp4yhi3LPL9aTEabUPUEB41t2tZjUO8NULQNeVfgdfE1OitkfqRWGiUlu2xUMr49Fv4kuV27PIdUoFlfdJT6570uQYfD573zUniRG4U9J-dDYdWpqXynklW7e815jJ1Ma96qSP8UxxR6SSQA6hLLHq10OUIHzHCDYlKwzOQ6ETGMKv7PW1O0QI"/>
+</div>
+</header>
+<div class="flex-1 p-6 flex space-x-6">
+<div class="w-1/3 bg-white rounded-lg shadow-sm border border-[var(--border-color)]">
+<div class="p-4 border-b border-[var(--border-color)]">
+<h2 class="text-xl font-bold text-[var(--text-primary)]">Inbox</h2>
+<div class="flex space-x-4 mt-4 text-sm text-[var(--text-secondary)]">
+<a class="font-semibold text-[var(--brand-primary)]" href="#">All</a>
+<a class="hover:text-[var(--brand-primary)]" href="#">Unread</a>
+<a class="hover:text-[var(--brand-primary)]" href="#">Sent</a>
+<a class="hover:text-[var(--brand-primary)]" href="#">Archived</a>
+</div>
+</div>
+<div class="overflow-y-auto">
+<div class="p-4 border-b border-[var(--border-color)] cursor-pointer message-list-item active">
+<div class="flex items-start space-x-4">
+<img alt="Liam Harper avatar" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkvEN5TExjKeroNZlkCaurAQn6SCDrj07T61yA3TW8v80Yc4TQknZ1pKbZweKXsY1eP2PGHrpg3BMpGBRmRKnYU6xTJClBCzS-5mAz2rEtOQ0VhR0s8oE_aT82KbBhCopl3c1ZoWK6wTYlDHtT1FyaWIyOP_NvOYMxz9eC5TCN9Y13GfTrtEVCLxbnuVJl5oVG9_U0M5NuVHnF8undZ4-Vrlb2CQI9nvDNoG_M8C1RHveMC7t378cyPNlIvbYad3ey2w6Xp8BQ3oc"/>
+<div class="flex-1">
+<div class="flex justify-between items-baseline">
+<p class="font-semibold text-[var(--text-primary)]">Liam Harper</p>
+<p class="text-xs text-[var(--text-secondary)]">10:30 AM</p>
+</div>
+<p class="text-sm font-semibold text-[var(--text-primary)] mt-1">Re: Project Collaboration</p>
+<p class="text-sm text-[var(--text-secondary)] truncate mt-1">Hey Sarah, that sounds like a great idea. I'm available...</p>
+</div>
+</div>
+</div>
+<div class="p-4 border-b border-[var(--border-color)] cursor-pointer message-list-item">
+<div class="flex items-start space-x-4">
+<img alt="Olivia Bennett avatar" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB87llkJrU5GPXoXDb69aNLi-TegDtilaL4EXTchDU314O8pn8TVDgYJv_77EakTv4oH7hnN2ZE_H9mCTpYZ_MkyZ8TEgBJdp75nLy2jutreGCakq1QWDi44jw47AEo_wiU5D4OGp2kIdzq0HN-iVPBrrKQLygxvy86cHqpmh-stx4uajoEopgcF-ebZFyLD8uOO4di7lMx6Mp1jlh-NnzlcpP0UukiWmJhC6AdXJ4wg4nFpgx6edcBw4pyg1Hq0VpdDoYCReWHBM0"/>
+<div class="flex-1">
+<div class="flex justify-between items-baseline">
+<p class="font-semibold text-[var(--text-primary)]">Olivia Bennett</p>
+<p class="text-xs text-[var(--text-secondary)]">Yesterday</p>
+</div>
+<p class="text-sm font-semibold text-[var(--text-primary)] mt-1">Following up on our session</p>
+<p class="text-sm text-[var(--text-secondary)] truncate mt-1">Just wanted to follow up on our last session. Did you have...</p>
+</div>
+</div>
+</div>
+<div class="p-4 border-b border-[var(--border-color)] cursor-pointer message-list-item">
+<div class="flex items-start space-x-4">
+<img alt="Noah Foster avatar" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4MwSZL_js1ZkmHv0BJHlzffkByEcX9zSLGED5_Ge5PxfuWh6A3zbJFtHprI2Gh1RIoWT_8IFB1HR-DVhmEpq0xHV69F8k2T-35q_hC9X9mpw5591S56sTvmzYTdv_CImb8GpyH8hFDz-CqMSKcaESF-QSmQbxYeiGsrOLguFmZxXtmGpb9eCjcIgBRLyz5dvKngzCPAVoxLUY0FlnTVgCGqYW7KY2Vj6i7NUXHj8mZQj-K-5GbAdBmPRDD3uNACh7GEjbwkW_nuE"/>
+<div class="flex-1">
+<div class="flex justify-between items-baseline">
+<p class="font-semibold text-[var(--text-primary)]">Noah Foster</p>
+<p class="text-xs text-[var(--text-secondary)]">July 10</p>
+</div>
+<p class="text-sm font-semibold text-[var(--text-primary)] mt-1">Quick Question</p>
+<p class="text-sm text-[var(--text-secondary)] truncate mt-1">Hi Sarah, had a quick question about the resources you...</p>
+</div>
+</div>
+</div>
+<div class="p-4 border-b border-[var(--border-color)] cursor-pointer message-list-item">
+<div class="flex items-start space-x-4">
+<img alt="Ethan Carter avatar" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARvN541Ib3-eKv212xvq_kR_FrJl9JH-m2Gm8j8VP0DtyxbNqjwHTDL-fc6FsZyBPBwhWE0zF7Y23qcrMX_4Ox7zaJMUBn0lOfTGD7Ln7_n_dVQ29cwL1a7duECSTEnyr0hBYbSIu5UfIY8yvTZt756IcZRgBDIq0lt6jmeH7o8BeMb25w3VHeXEjjvs7IUUCbMwojMTxbemBfN1GCXAHlUqxKEh-rzK3xznhtfpUFrl2v0cSVzHo1aPJhhiYLXgtYxtRKL87KAX8"/>
+<div class="flex-1">
+<div class="flex justify-between items-baseline">
+<p class="font-semibold text-[var(--text-primary)]">Ethan Carter</p>
+<p class="text-xs text-[var(--text-secondary)]">July 9</p>
+</div>
+<p class="text-sm font-semibold text-[var(--text-primary)] mt-1">Session Confirmation</p>
+<p class="text-sm text-[var(--text-secondary)] truncate mt-1">Confirming our session for next week. Looking forward to it!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-2/3 bg-white rounded-lg shadow-sm flex flex-col border border-[var(--border-color)]">
+<div class="p-4 border-b border-[var(--border-color)]">
+<h3 class="text-xl font-bold text-[var(--text-primary)]">Re: Project Collaboration</h3>
+<div class="flex items-center space-x-4 mt-4">
+<img alt="Liam Harper avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv1Gncxyp22V6gsIh6e6Q8avVug0ZF47ngQb0NqMQs2zgQuLCGD4K1rAnjTw2_3eNkT1ll-lIm8ddAx4Czb0E2OxYyfJzO2hfyHo7CxCXG7Dt-RQ090XF6XVyuyKJ7i4ybhKbut1kPBIj89O9yRtQbqES5NU3p9VrQEbhWaZd__yMHf1dWLSDo96qnp2jeiq2wEfTJndp_GKRQvfBhdAxlr-hjsMEKPTbtqCmk6INXpWpHh-Dlz7BH67eNR6dg1zhfzkDZUspen9k"/>
+<div>
+<p class="font-semibold text-[var(--text-primary)]">Liam Harper</p>
+<p class="text-sm text-[var(--text-secondary)]">To: Sarah</p>
+</div>
+<div class="flex-grow text-right">
+<p class="text-sm text-[var(--text-secondary)]">July 16, 2024, 10:30 AM</p>
+</div>
+</div>
+</div>
+<div class="flex-1 p-6 overflow-y-auto space-y-4 text-[var(--text-primary)]">
+<p>Hey Sarah,</p>
+<p>That sounds like a great idea. I'm available to chat more about this tomorrow afternoon. Would 2 PM work for you?</p>
+<p>We can discuss the project scope, timeline, and how we can best leverage our skills to make it a success. I've already jotted down a few initial thoughts that I'm excited to share.</p>
+<p>Let me know what time works best.</p>
+<p>Best,<br/>Liam</p>
+</div>
+<div class="p-6 border-t border-[var(--border-color)] bg-gray-50 rounded-b-lg">
+<textarea class="w-full p-3 border border-[var(--border-color)] rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" placeholder="Type your reply..." rows="4"></textarea>
+<div class="flex justify-end mt-4">
+<button class="bg-[var(--brand-primary)] text-white px-6 py-2 rounded-lg font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Reply
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

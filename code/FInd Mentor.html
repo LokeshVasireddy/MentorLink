@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Find Mentors - MentorLink</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-50: #faf5ff;
+            --primary-100: #f3e8ff;
+            --primary-500: #9333ea;
+            --primary-600: #8619e6;
+            --primary-700: #7e22ce;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-gray-50">
+<div class="flex h-screen">
+<aside class="w-64 bg-black p-6 flex flex-col fixed top-0 left-0 h-full">
+<div class="flex-grow">
+<div class="flex items-center mb-10">
+<h1 class="text-2xl font-bold text-white">MentorLink</h1>
+</div>
+<nav class="flex flex-col space-y-2">
+<a class="flex items-center p-3 text-gray-400 rounded-lg hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined mr-3">dashboard</span>
+            Dashboard
+        </a>
+<a class="flex items-center p-3 text-gray-400 rounded-lg hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined mr-3">group</span>
+            Current Mentorships
+        </a>
+<a class="flex items-center p-3 text-gray-400 rounded-lg hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined mr-3">mail</span>
+            Mailbox
+        </a>
+<a class="flex items-center p-3 text-gray-400 rounded-lg hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined mr-3">timeline</span>
+            AI Roadmaps
+        </a>
+<a class="flex items-center p-3 text-white bg-purple-600 rounded-lg font-semibold" href="#">
+<span class="material-symbols-outlined mr-3">search</span>
+            Find Mentors
+        </a>
+<a class="flex items-center p-3 text-gray-400 rounded-lg hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined mr-3">hub</span>
+            Mentor Link
+        </a>
+<a class="flex items-center p-3 text-gray-400 rounded-lg hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined mr-3">source</span>
+            Resources
+        </a>
+<a class="flex items-center p-3 text-gray-400 rounded-lg hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined mr-3">settings</span>
+            Settings
+        </a>
+</nav>
+</div>
+</aside>
+<main class="flex-1 ml-64 overflow-y-auto">
+<header class="bg-white border-b border-gray-200 p-4 flex justify-end items-center sticky top-0 z-10">
+<div class="relative w-full max-w-xs">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="bg-gray-100 rounded-lg py-2 pl-10 pr-4 w-full focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Search" type="text"/>
+</div>
+<div class="flex items-center ml-6">
+<span class="material-symbols-outlined text-gray-600">notifications</span>
+<img alt="Sarah's profile picture" class="w-8 h-8 rounded-full ml-4 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2fyvT5VYAGnQZWnktDhLBsLKAlvk5feIeaaLbs4yIlBO0Leqg2i27-q_cPPba1eY3p6O4GL0RfptH5M3gwXskSaB02wTSBmA2h9-kzK-7CDScMuDYNRbfZMO7sgcyX0v1o7ai2yqjfQ0Sz-yBX0UpVlxRtpox6uUmIc2Gc-v3He_tJfprqNVvr-Fi71lFbH6BFYqbUbH0wglbEde0R8KvnmzWJGtEm8iEj128RvesXMGn6VSxqf4eabVPBzBtqoGAFd8BIrEG3APP"/>
+</div>
+</header>
+<div class="p-8">
+<h2 class="text-3xl font-bold text-gray-800 mb-8">Find Mentors</h2>
+<div class="bg-white p-6 rounded-xl shadow-sm mb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="bg-gray-100 rounded-lg py-3 pl-10 pr-4 w-full focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Search by name..." type="text"/>
+</div>
+<div>
+<select class="w-full bg-gray-100 rounded-lg py-3 px-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500">
+<option>Filter by Skill</option>
+<option>Software Engineering</option>
+<option>Product Management</option>
+<option>Data Science</option>
+<option>UX Design</option>
+</select>
+</div>
+<div>
+<select class="w-full bg-gray-100 rounded-lg py-3 px-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500">
+<option>Filter by Industry</option>
+<option>Tech</option>
+<option>Finance</option>
+<option>Healthcare</option>
+<option>Education</option>
+</select>
+</div>
+<div>
+<select class="w-full bg-gray-100 rounded-lg py-3 px-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500">
+<option>Filter by Availability</option>
+<option>Available this week</option>
+<option>Available next week</option>
+<option>Weekends only</option>
+</select>
+</div>
+</div>
+</div>
+<div class="flex justify-end items-center mb-6">
+<label class="text-gray-600 mr-2" for="sort">Sort by:</label>
+<select class="bg-white border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-purple-500" id="sort">
+<option>Relevance</option>
+<option>Rating</option>
+<option>Experience</option>
+</select>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<img alt="Liam Harper's profile picture" class="w-24 h-24 rounded-full mb-4 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrxLb93rKVeuSPj5iw41xYiJCgXuPvrz2cz90WxN2XYHNqgleIR_vhcr6BKnvq0STv0_Co7JUVYQcggmxlaDQlsaPSkULspCGe_OIe2Txd-gMEKIQorA3iIpiJku4i88tjpv9vjeXFQ1n9V8L4HXcP0pWboNlZWtYl5vReZ2aLFY4OBQ0k_Ij-WGXiDSZpDI89afxzf7msDNxD3r4s36jLwQLRjWnWAX5op290jSpWuruBoJCSv7qtnKw_5eSnok-FXcjn5RN0vOTe"/>
+<h3 class="text-lg font-semibold text-gray-800">Liam Harper</h3>
+<p class="text-gray-500 mb-3">Software Engineering</p>
+<div class="inline-flex items-center bg-green-100 text-green-700 text-sm font-medium px-3 py-1 rounded-full mb-4">
+                        Available this week
+                    </div>
+<button class="w-full bg-white border border-purple-500 text-purple-600 font-semibold py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors">Connect</button>
+</div>
+<div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<img alt="Olivia Bennett's profile picture" class="w-24 h-24 rounded-full mb-4 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqEJL6p8vae8jCzSo7lkfGt6OQGPM1OkTo8pJM4fG3XVnqfPiG6tZpjjrBiOhRL6nwXaT8Cv_SfOxagrmTWhnVcikjSjDbqbnhX6JfC8l5P4qgDyyutj5EP8-31IjE1eS7ENz1y4F6Hra0QQhdO2545al4WPVC1lg9xRGxC2-9yoE1u1Bb680oYUOFmyiXhpN-K5NHKoUTmOmjds9mROLU7_24KHVcdpP5irCfBJoo6ASaW66wHzeSr3UcUlynu0XmzH5J5Q5VoZwM"/>
+<h3 class="text-lg font-semibold text-gray-800">Olivia Bennett</h3>
+<p class="text-gray-500 mb-3">Product Management</p>
+<div class="inline-flex items-center bg-green-100 text-green-700 text-sm font-medium px-3 py-1 rounded-full mb-4">
+                        Available this week
+                    </div>
+<button class="w-full bg-white border border-purple-500 text-purple-600 font-semibold py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors">Connect</button>
+</div>
+<div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<img alt="Noah Foster's profile picture" class="w-24 h-24 rounded-full mb-4 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUe9GyThKCUZJGJn8ZfBfO01YoEiPVbpLaymM4CSy1mQZTf8vy9wZ0k9pJDohWh_AIEjjxeTwQluMfy7HmfPE1qKHkpl9Jr1TmelHgkrDfUGVC85AGQrXL-lIG1LympK5quDtzmJoZPTHirVt7JD-c9SSIOV_lTKlgM3lY0DjQxEKT2JhV_6xEtYe1Icyx2If6SQNTjiG-9sageM41rkZFxxzM0CRCVzyXl-u2ofpOKT5YOMKKLT3hrHjW_lcLTWAhqSHCselnh8uA"/>
+<h3 class="text-lg font-semibold text-gray-800">Noah Foster</h3>
+<p class="text-gray-500 mb-3">Data Science</p>
+<div class="inline-flex items-center bg-yellow-100 text-yellow-700 text-sm font-medium px-3 py-1 rounded-full mb-4">
+                        Available next week
+                    </div>
+<button class="w-full bg-white border border-purple-500 text-purple-600 font-semibold py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors">Connect</button>
+</div>
+<div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<img alt="Emma Hayes's profile picture" class="w-24 h-24 rounded-full mb-4 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs57EhZMicE5osz6CUXCRUntCFF6DoRsJDfAFCpzdT0uFi64B0fnwZv5yb5Bg2jCK4HDM6u_Gxz0gQhSKYe0HU3y2iG_dczcOuQkrG6rJ0mJ3Bx1sMqihqA-IBLIkY0OivvrRyXDbry8JVm3HmfgbWKQSEAbymYEXMbOMmVrfET8X7nM99pzpwjE3dVfCeN70wVjgaGjdY_8NdrYeBWuvgqJwd5Y0bsiH3O3HJ-zAvFVDe_-X-WdfOg2Td6pwyROyy2RfqhNNF6mYW"/>
+<h3 class="text-lg font-semibold text-gray-800">Emma Hayes</h3>
+<p class="text-gray-500 mb-3">UX Design</p>
+<div class="inline-flex items-center bg-green-100 text-green-700 text-sm font-medium px-3 py-1 rounded-full mb-4">
+                        Available this week
+                    </div>
+<button class="w-full bg-white border border-purple-500 text-purple-600 font-semibold py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors">Connect</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

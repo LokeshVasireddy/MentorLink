@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7fafc;
+        }
+        .toggle-checkbox:checked {
+            @apply: right-0 border-purple-600;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            @apply: bg-purple-600;
+        }
+    </style>
+</head>
+<body class="flex bg-gray-50">
+<aside class="w-64 bg-black p-6 shadow-md">
+<div class="flex items-center mb-8">
+<img alt="MentorLink logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDONfMe6hI24xGn3yP3D6tUGz5XWo_Mm61rAlHFHhdPnG00Z72Xg-rAMecIWKRYNKH6m0LPBlsAgYvF1M89bvnLOnazUMpPZDAjgXReB4tp-BaXxEGWNvpSFXhNbYnMYxh4lsPtslchnHFmX2BxqEFif0BQ1SQ7SLwXPLiqCReQU6M6nlvAh9v2eZM88XA4WydMY5pcFJ8VQOiheFHsoEFtnEFSo4QLq5FH99IvToBnRh3BHd7hC0JJiYl0VMphnp6XMpPA55M1iCRB"/>
+<h1 class="text-xl font-bold text-white ml-2">MentorLink</h1>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center text-gray-400 hover:text-white hover:bg-gray-800 rounded-md py-2 px-3 transition-colors" href="#">
+<span class="material-icons mr-3">dashboard</span>
+            Dashboard
+        </a>
+<a class="flex items-center bg-purple-600 text-white rounded-md py-2 px-3" href="#">
+<span class="material-icons mr-3">people</span>
+            Current Mentorships
+        </a>
+<a class="flex items-center text-gray-400 hover:text-white hover:bg-gray-800 rounded-md py-2 px-3 transition-colors" href="#">
+<span class="material-icons mr-3">mail_outline</span>
+            Mailbox
+        </a>
+<a class="flex items-center text-gray-400 hover:text-white hover:bg-gray-800 rounded-md py-2 px-3 transition-colors" href="#">
+<span class="material-icons mr-3">auto_awesome</span>
+            AI Roadmaps
+        </a>
+<a class="flex items-center text-gray-400 hover:text-white hover:bg-gray-800 rounded-md py-2 px-3 transition-colors" href="#">
+<span class="material-icons mr-3">search</span>
+            Find Mentors
+        </a>
+<a class="flex items-center text-gray-400 hover:text-white hover:bg-gray-800 rounded-md py-2 px-3 transition-colors" href="#">
+<span class="material-icons mr-3">source</span>
+            Resources
+        </a>
+<a class="flex items-center text-gray-400 hover:text-white hover:bg-gray-800 rounded-md py-2 px-3 transition-colors" href="#">
+<span class="material-icons mr-3">settings</span>
+            Settings
+        </a>
+</nav>
+</aside>
+<main class="flex-1 p-8">
+<header class="flex justify-between items-center mb-8">
+<h1 class="text-3xl font-bold text-gray-900">Settings</h1>
+<div class="flex items-center space-x-4">
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="bg-gray-100 border border-gray-200 rounded-lg py-2 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-purple-500 w-64" placeholder="Search" type="text"/>
+</div>
+<div class="relative">
+<span class="material-icons text-gray-600 cursor-pointer">notifications</span>
+</div>
+<img alt="User avatar" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTnLoenL5xBc0MQgCP4xJL17SRhRbnjxp3glcL0OVvfBzNLhEWmpvLuNCZIfIC1wVmkXSi-ohtxIyfErw9NXRlezoT3iwNa0x0IqkGnBAJqEisr9nNBEuGOu7R-VGyy-wvMb3L0CBvDLOm-M6Q5OzVqJM852Hnq0COX3zPzJBzDB5iu6jRGKtsQUqldTvc82EzL4560pjLj6PWFLKEbkkOQk5JZ85fhiiHgSRbIApKkP_3FUBd4SmEqzn4fEW3fvKOjqbX9F8EzBFi"/>
+</div>
+</header>
+<div class="grid grid-cols-12 gap-8">
+<aside class="col-span-3">
+<div class="bg-white p-4 rounded-lg shadow">
+<nav class="space-y-1">
+<a class="block px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md" href="#">Account</a>
+<a class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 rounded-md" href="#">Notifications</a>
+<a class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 rounded-md" href="#">Privacy</a>
+<a class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 rounded-md" href="#">Billing</a>
+</nav>
+</div>
+</aside>
+<div class="col-span-9 space-y-8">
+<div class="bg-white p-6 rounded-lg shadow">
+<h2 class="text-xl font-semibold text-gray-800 mb-6">Account Settings</h2>
+<div class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="firstName">First Name</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm" id="firstName" type="text" value="Sarah"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="lastName">Last Name</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm" id="lastName" type="text" value="Doe"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="email">Email Address</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm" id="email" type="email" value="sarah.doe@example.com"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="country">Country</label>
+<select class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm rounded-md" id="country">
+<option>United States</option>
+<option>Canada</option>
+<option>Mexico</option>
+</select>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow">
+<h2 class="text-xl font-semibold text-gray-800 mb-6">Notification Settings</h2>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-sm font-medium text-gray-700">Email Notifications</span>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-2 appearance-none cursor-pointer" id="toggle1" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="toggle1"></label>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm font-medium text-gray-700">Push Notifications</span>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-2 appearance-none cursor-pointer" id="toggle2" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="toggle2"></label>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm font-medium text-gray-700">Weekly Newsletter</span>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-2 appearance-none cursor-pointer" id="toggle3" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="toggle3"></label>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end">
+<button class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-colors">
+                    Save Changes
+                </button>
+</div>
+</div>
+</div>
+</main>
+
+</body></html>
