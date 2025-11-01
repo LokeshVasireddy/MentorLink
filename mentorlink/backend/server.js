@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+import authRoutes from "./routes/authRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -23,33 +24,8 @@ app.use(
 );
 //app.use(cors()); // Allow ALL origins (brute-force)
 
-// User schema
-const userSchema = new mongoose.Schema({
-  fullName: String,
-  email: String,
-  password: String
-});
-const User = mongoose.model("User", userSchema);
-
-// Signup route
-app.post("/signup", async (req, res) => {
-  try {
-    const { fullName, email, password } = req.body;
-    const user = new User({ fullName, email, password });
-    await user.save();
-    res.status(200).json({ message: "Account created successfully!" });
-  } catch (err) {
-    res.status(500).json({ message: "Something went wrong" });
-  }
-});
-
-// Signin route (basic check)
-app.post("/signin", async (req, res) => {
-  const { email, password } = req.body;
-  const user = await User.findOne({ email, password });
-  if (!user) return res.status(401).json({ message: "Invalid credentials" });
-  res.status(200).json({ message: "Login successful!" });
-});
+// Mount auth routes
+app.use("/api/auth", authRoutes);
 
 // Test route
 app.get("/test", (req, res) => res.send("API is working ✅"));
