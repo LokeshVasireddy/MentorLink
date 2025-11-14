@@ -7,6 +7,7 @@ const SignIn = () => {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -14,17 +15,28 @@ const SignIn = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/signin",
+        "http://localhost:5001/api/auth/signin",
         formData
       );
-      alert(res.data.message || "Login successful!");
-      // Navigate to dashboard if route exists
+      if (res.data.token) localStorage.setItem("token", res.data.token);
       navigate("/dashboard");
     } catch (err) {
       alert(err.response?.data?.message || "Invalid credentials");
+    } finally {
+      setLoading(false);
     }
+  };
+
+  // OAuth login handler - redirects to real OAuth providers
+  const handleOAuthLogin = (provider) => {
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5001";
+    
+    // Redirect to real OAuth provider (Google/GitHub/LinkedIn)
+    // This will show the actual login page from the provider
+    window.location.href = `${backendUrl}/api/auth/${provider}`;
   };
 
   return (
@@ -69,8 +81,8 @@ const SignIn = () => {
             <a href="#">Forgot password?</a>
           </div>
 
-          <button type="submit" className="auth-button">
-            Sign In
+          <button type="submit" className="auth-button" disabled={loading}>
+            {loading ? "Signing In..." : "Sign In"}
           </button>
         </form>
 
@@ -84,7 +96,11 @@ const SignIn = () => {
         <div className="divider"><span>Or continue with</span></div>
 
         <div className="social-buttons">
-          <button className="social-btn google">
+          <button
+            className="social-btn google"
+            onClick={() => handleOAuthLogin("google")}
+          >
+            {/* Google SVG */}
             <svg viewBox="0 0 24 24">
               <path
                 fill="#fff"
@@ -93,7 +109,10 @@ const SignIn = () => {
             </svg>
           </button>
 
-          <button className="social-btn github">
+          <button
+            className="social-btn github"
+            onClick={() => handleOAuthLogin("github")}
+          >
             <svg viewBox="0 0 24 24">
               <path
                 fill="#fff"
@@ -102,7 +121,10 @@ const SignIn = () => {
             </svg>
           </button>
 
-          <button className="social-btn linkedin">
+          <button
+            className="social-btn linkedin"
+            onClick={() => handleOAuthLogin("linkedin")}
+          >
             <svg viewBox="0 0 24 24">
               <path
                 fill="#fff"

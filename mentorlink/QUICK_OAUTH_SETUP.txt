@@ -1,0 +1,68 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    QUICK OAUTH SETUP - 10 MINUTES                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Your OAuth buttons will work like real applications after this setup!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔵 GOOGLE OAUTH (5 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to: https://console.cloud.google.com/
+2. Create new project: "MentorLink"
+3. Go to: APIs & Services → Credentials
+4. Configure OAuth Consent Screen:
+   - External user type
+   - App name: MentorLink
+   - Add your email as test user
+5. Create OAuth Client ID:
+   - Web application
+   - Authorized redirect URI: http://localhost:5001/api/auth/google/callback
+6. Copy Client ID and Secret
+7. Add to backend/.env:
+   GOOGLE_CLIENT_ID=your_client_id
+   GOOGLE_CLIENT_SECRET=your_client_secret
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚫ GITHUB OAUTH (3 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to: https://github.com/settings/developers
+2. OAuth Apps → New OAuth App
+3. Fill in:
+   - App name: MentorLink
+   - Homepage: http://localhost:5173
+   - Callback: http://localhost:5001/api/auth/github/callback
+4. Generate client secret
+5. Add to backend/.env:
+   GITHUB_CLIENT_ID=your_client_id
+   GITHUB_CLIENT_SECRET=your_client_secret
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔵 LINKEDIN OAUTH (5 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to: https://www.linkedin.com/developers/apps
+2. Create app (you need a LinkedIn Company Page)
+3. Products tab → Request "Sign In with LinkedIn"
+4. Auth tab → Add redirect URL: http://localhost:5001/api/auth/linkedin/callback
+5. Copy Client ID and Secret
+6. Add to backend/.env:
+   LINKEDIN_CLIENT_ID=your_client_id
+   LINKEDIN_CLIENT_SECRET=your_client_secret
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ FINAL STEP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Restart backend: npm start
+2. You should see:
+   ✅ Google OAuth strategy initialized
+   ✅ GitHub OAuth strategy initialized
+   ✅ LinkedIn OAuth strategy initialized
+
+3. Test: Click OAuth buttons → You'll be redirected to provider's login page!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For detailed instructions, see: SETUP_OAUTH_CREDENTIALS.md
